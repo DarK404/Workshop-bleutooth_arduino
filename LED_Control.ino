@@ -1,25 +1,29 @@
+int data = 0;
 void setup() {
   Serial.begin(9600);
+  digitalWrite(13, LOW);
   pinMode(13, OUTPUT);
 }
 
 void loop() {
- 
+
   if (Serial.available() > 0)
   {
-    char data = Serial.read(); 
+    int data = Serial.read();
     switch (data)
     {
-      case '1':
+      case '0':
         digitalWrite(13, HIGH);
-        break; 
-      case '2':
+        delay(10);
+        break;
+      case '1':
         digitalWrite(13, LOW);
-        break; 
+        delay(10);
+        break;
       default :
-      break;
+        break;
     }
     Serial.println(data);
   }
-  delay(50);
+ 
 }
