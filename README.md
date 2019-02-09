@@ -11,4 +11,14 @@
 4.[AT command set ](https://cdn.instructables.com/ORIG/FHJ/PL61/IRXT0HXV/FHJPL61IRXT0HXV.pdf) 
 
 ## Configuration : 
+### Using TTL converter  :
+You need to know these basic commands 
+
+AT+NAME? 
+`AT+NAME=HC-05`to set the name as HC-05
+AT+ PSWD? 
+`AT+PSWD=1234 `to set the password as 1234
+
+AT+ UART? 
+`AT+UART=115200,0,0 `to set the baud rate as 115200
 
