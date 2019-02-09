@@ -16,6 +16,7 @@ You need to know these basic commands
 
 AT+NAME? 
 `AT+NAME=HC-05`to set the name as HC-05
+
 AT+ PSWD? 
 `AT+PSWD=1234 `to set the password as 1234
 
